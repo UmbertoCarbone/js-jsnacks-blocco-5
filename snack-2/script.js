@@ -30,7 +30,9 @@ const namesMap = people.map((person) => {
 const namesFilter = people.filter((person) => {
   console.log(person.name);
   return person.name;
-}); 
+});   
+
+//
 
 
 
