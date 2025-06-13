@@ -21,3 +21,30 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+
+  //Find
+const myPerson = students.find((person) => {
+  return person.id === 2;
+
+})
+console.log(myPerson)
+
+//ciclo for
+
+for (let i = 0; i < students.length;i++) {
+const nameDue = students[1]
+console.log(nameDue)
+break
+}
+
+
+
+// In sospeso
+/* 
+ students.forEach((students, id) =>{
+  
+  console.log(students,id)
+})  */
+
+
