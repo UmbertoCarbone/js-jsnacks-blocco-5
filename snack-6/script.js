@@ -77,3 +77,11 @@ console.log(zucchineLunghe);
 //filter con zucchine 15-
 const zucchineCorte = zucchine.filter((zucchina) => zucchina.length < 15);
 console.log(zucchineCorte);
+
+//map solo con le zucchine più lunghe di 15 cm
+const zucchineLungheMap = zucchine.map((zucchina) => {
+  if (zucchina.length >= 15) {
+    return zucchina;
+  }
+})
+console.log(zucchineLungheMap)
