@@ -6,16 +6,16 @@ const students = [
     class: '3C'
   },
   {
-    id: 2,
-    name: 'Mario Banfi',
-    age: 34,
-    class: '4A'
-  },
-  {
     id: 3,
     name: 'Luigi Banzi',
     age: 33,
     class: '5B'
+  },
+  {
+    id: 2,
+    name: 'Mario Banfi',
+    age: 34,
+    class: '4A'
   },
 ];
 
@@ -31,20 +31,24 @@ const myPerson = students.find((person) => {
 console.log(myPerson)
 
 //ciclo for
-
+let foundStudent = null;
 for (let i = 0; i < students.length;i++) {
-const nameDue = students[1]
-console.log(nameDue)
-break
+  const student = students[i]
+
+  if (student.id === 2) {
+    foundStudent = student
+    break
+  }
 }
+console.log(foundStudent)
 
 
 
 // In sospeso
-/* 
- students.forEach((students, id) =>{
+ 
+//   students.forEach((students, id) =>{
   
-  console.log(students,id)
-})  */
-
+//   console.log(students,id)
+// })  
+ 
 
