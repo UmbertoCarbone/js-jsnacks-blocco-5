@@ -12,3 +12,32 @@ const zucchine = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
+
+
+//Ciclo for con 2 console log diversi
+//riga 26 zucchine 15 cm+
+//riga 23 zucchine 15cm-
+for (let i = 0; i < zucchine.length; i++) {
+ if
+ (zucchine[i].length >= 15 ){
+  console.log(zucchine[i])
+
+ } else if (zucchine[i].length < 15){  
+  console.log(zucchine[i])}
+}
+
+
+//ciclo for di un array  con zucchine 15 cm+
+for (let i = 0;i < zucchine.length; i++) {
+  if (zucchine[i].length >=15) {
+    console.log(zucchine[i])
+  }
+}
+
+//ciclo for con un array con zucchine 15-
+for (let i =0;i < zucchine.length;i++) {
+  if (zucchine[i].length < 15) {
+    console.log(zucchine[i])
+  }
+}
+
