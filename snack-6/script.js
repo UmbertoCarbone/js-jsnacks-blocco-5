@@ -41,3 +41,39 @@ for (let i =0;i < zucchine.length;i++) {
   }
 }
 
+//forEach con 2 console log diversi 
+//riga 49 zucchine 15 cm+
+//riga 51 zucchine 15cm-
+zucchine.forEach((zucchina) => {
+  if (zucchina.length >= 15) {
+    console.log(zucchina);
+  } else {
+    console.log(zucchina);
+  }
+}
+);
+
+//forEach con un array con zucchine 15 cm+
+zucchine.forEach((zucchina) => {
+  if (zucchina.length >= 15) {
+    console.log(zucchina);
+  }
+}
+);
+
+//forEach con un array con zucchine 15-
+zucchine.forEach((zucchina) => {
+  if (zucchina.length < 15) {
+    console.log(zucchina);
+  }
+}
+);
+
+
+//filter con zucchine 15 cm+
+const zucchineLunghe = zucchine.filter((zucchina) => zucchina.length >= 15);
+console.log(zucchineLunghe);
+
+//filter con zucchine 15-
+const zucchineCorte = zucchine.filter((zucchina) => zucchina.length < 15);
+console.log(zucchineCorte);
